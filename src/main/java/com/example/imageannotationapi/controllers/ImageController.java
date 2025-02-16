@@ -34,7 +34,7 @@ public class ImageController {
     }
 
     @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    @Operation(summary = "Upload and annotate images")
+    @Operation(summary = "Upload and annotate JPG images")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "202", description = "Images are being uploaded"),
             @ApiResponse(responseCode = "400", description = "Invalid input parameters"),

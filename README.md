@@ -22,16 +22,23 @@ Please take a look on the Notes section for more information about the project.
     - [Alternative solutions](#alternative-solutions)
 
 
-## How to run the project with Docker
+## How to run the project with Dockerfile
 
 ### Prerequisites
-[Docker](https://www.docker.com/) installed.
+- [Docker](https://www.docker.com/) installed.
+- Apache Maven installed (for building the project).
 
 ### Clone the Repository
 
 ```bash
 git clone https://github.com/GiatrGio/ImageAnnotationAPI.git
 cd imageAnnotationAPI
+```
+
+### Build the Project
+
+```bash
+mvn clean install
 ```
 
 ### Build and run the application
@@ -41,7 +48,7 @@ Run the following command to build and start the containers:
 docker-compose up --build
 ```
 
-## How to build and run the project using maven
+## How to build and run the project as a Java application
 
 ### Prerequisites
 
@@ -54,6 +61,7 @@ docker-compose up --build
 ```bash
 mvn clean install
 ```
+
 ### Start the Docker MySQL Database
 
 ```bash
